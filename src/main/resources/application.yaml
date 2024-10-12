@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    generate-unique-name: false
+    name: tacocloud
+  application:
+    name: taco-cloud
+  h2:
+    console:
+      enabled: true 
+      path: /h2-console 
