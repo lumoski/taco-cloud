@@ -14,10 +14,11 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
-import tacos.Ingredient;
-import tacos.Taco;
-import tacos.TacoOrder;
-import tacos.Ingredient.Type;
+import tacos.domain.Ingredient;
+import tacos.domain.Taco;
+import tacos.domain.TacoOrder;
+import tacos.domain.Ingredient.Type;
+
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Slf4j

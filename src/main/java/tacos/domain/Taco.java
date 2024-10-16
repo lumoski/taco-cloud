@@ -1,6 +1,7 @@
-package tacos;
+package tacos.domain;
 
 import lombok.Data;
+
 import java.util.List;
 
 import jakarta.validation.constraints.NotNull;
