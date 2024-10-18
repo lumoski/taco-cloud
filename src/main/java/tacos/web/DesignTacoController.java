@@ -1,6 +1,6 @@
 package tacos.web;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
+
 import tacos.data.IngredientRepository;
 import tacos.domain.Ingredient;
 import tacos.domain.Taco;
@@ -65,8 +66,9 @@ public class DesignTacoController {
             return "design";
         }
         
-        tacoOrder.addTaco(taco);
         log.info("Processing taco: {},", taco);
+        log.info(taco.getIngredients().get(0).toString());
+        tacoOrder.addTaco(taco);
 
         return "redirect:/orders/current";
     }
